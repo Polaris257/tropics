@@ -6,7 +6,9 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.SwordItem;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -17,9 +19,14 @@ public class Tropics implements ModInitializer {
             FabricBlockSettings.of(Material.WOOD).strength(1.0F, 1.5F).sounds(BlockSoundGroup.WOOD));
     public static final Identifier BALSA_PLANKS_ID = new Identifier("tropics", "balsa_planks");
 
+    public static final Item MACHETE = new SwordItem(MacheteToolMaterial.INSTANCE, -1, -1.8F, new Item.Settings().group(ItemGroup.MISC));
+        public static final Identifier MACHETE_ID = new Identifier("tropics", "machete");
+    
     @Override
     public void onInitialize() {
         Registry.register(Registry.BLOCK, BALSA_PLANKS_ID, BALSA_PLANKS);
         Registry.register(Registry.ITEM, BALSA_PLANKS_ID, new BlockItem(BALSA_PLANKS, new FabricItemSettings().group(ItemGroup.MISC)));
+
+        Registry.register(Registry.ITEM, MACHETE_ID, MACHETE);
     }
 }
