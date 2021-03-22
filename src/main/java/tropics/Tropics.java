@@ -8,7 +8,6 @@ import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.item.SwordItem;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -19,7 +18,7 @@ public class Tropics implements ModInitializer {
             FabricBlockSettings.of(Material.WOOD).strength(1.0F, 1.5F).sounds(BlockSoundGroup.WOOD));
     public static final Identifier BALSA_PLANKS_ID = new Identifier("tropics", "balsa_planks");
 
-    public static final Item MACHETE = new SwordItem(MacheteToolMaterial.INSTANCE, -1, -1.8F, new Item.Settings().group(ItemGroup.MISC));
+    public static final Item MACHETE = new Machete();
         public static final Identifier MACHETE_ID = new Identifier("tropics", "machete");
     
     @Override
