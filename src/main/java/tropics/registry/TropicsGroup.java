@@ -11,9 +11,10 @@ import static tropics.registry.TropicsItems.MACHETE;
 public class TropicsGroup {
     public static final ItemGroup TROPICS_GROUP;
     static {
-        TROPICS_GROUP = FabricItemGroupBuilder.create(new Identifier("tropics", "main")).icon(() -> new ItemStack(BALSA_PLANKS)).appendItems(stacks -> {
-            stacks.add(new ItemStack(MACHETE));
-            stacks.add(new ItemStack(BALSA_PLANKS));
-        }).build();
+        TROPICS_GROUP = FabricItemGroupBuilder.create(new Identifier("tropics", "main"))
+                .icon(() -> new ItemStack(BALSA_PLANKS)).appendItems(stacks -> {
+                    stacks.add(new ItemStack(MACHETE));
+                    stacks.add(new ItemStack(BALSA_PLANKS));
+                }).build();
     }
 }
