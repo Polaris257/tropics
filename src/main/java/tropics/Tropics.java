@@ -13,30 +13,20 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import tropics.registry.TropicsBlocks;
+import tropics.registry.TropicsItems;
+
+import static tropics.registry.TropicsBlocks.BALSA_PLANKS;
+import static tropics.registry.TropicsItems.MACHETE;
 
 public class Tropics implements ModInitializer {
 
-    public static final ItemGroup TROPICS_GROUP;
-
-    public static final Block BALSA_PLANKS = new Block(
-            FabricBlockSettings.of(Material.WOOD).strength(1.0F, 1.5F).sounds(BlockSoundGroup.WOOD));
-    public static final Identifier BALSA_PLANKS_ID = new Identifier("tropics", "balsa_planks");
-
-    public static final Item MACHETE = new Machete();
-        public static final Identifier MACHETE_ID = new Identifier("tropics", "machete");
-    
-    static {
-        TROPICS_GROUP = FabricItemGroupBuilder.create(new Identifier("tropics", "main")).icon(() -> new ItemStack(BALSA_PLANKS)).appendItems(stacks -> {
-            stacks.add(new ItemStack(MACHETE));
-            stacks.add(new ItemStack(BALSA_PLANKS));
-        }).build();
-    }
+  public static final String MODID = "tropics";
     
     @Override
     public void onInitialize() {
-        Registry.register(Registry.BLOCK, BALSA_PLANKS_ID, BALSA_PLANKS);
-        Registry.register(Registry.ITEM, BALSA_PLANKS_ID, new BlockItem(BALSA_PLANKS, new FabricItemSettings()));
+        TropicsBlocks.registerBlocks();
+        TropicsItems.registerItems();
 
-        Registry.register(Registry.ITEM, MACHETE_ID, MACHETE);
     }
 }
