@@ -2,6 +2,7 @@ package tropics;
 
 import net.fabricmc.api.ModInitializer;
 import tropics.registry.TropicsBlocks;
+import tropics.registry.TropicsGroup;
 import tropics.registry.TropicsItems;
 
 public class Tropics implements ModInitializer {
@@ -12,6 +13,6 @@ public class Tropics implements ModInitializer {
     public void onInitialize() {
         TropicsBlocks.registerBlocks();
         TropicsItems.registerItems();
-
+        TropicsGroup.loadClass();
     }
 }
