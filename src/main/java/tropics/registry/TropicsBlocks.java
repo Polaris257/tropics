@@ -17,7 +17,7 @@ public class TropicsBlocks
     public static final Block BALSA_PLANKS = new Block(
             FabricBlockSettings.of(Material.WOOD).strength(1.0F, 1.5F).sounds(BlockSoundGroup.WOOD));
 
-    public static final Block TIKI_TORCH = new Block(AbstractBlock.Settings.copy(Blocks.TORCH));
+    public static final Block TIKI_TORCH = new Block(AbstractBlock.Settings.copy(Blocks.SAND));
 
     public static void registerBlocks()
     {

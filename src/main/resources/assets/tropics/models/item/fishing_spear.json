@@ -1,0 +1,101 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "minecraft:block/scaffolding_bottom",
+		"1": "minecraft:block/obsidian",
+		"particle": "minecraft:block/scaffolding_bottom"
+	},
+	"elements": [
+		{
+			"name": "Shaft",
+			"from": [7.5, 0, 7.5],
+			"to": [8.5, 27, 8.5],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 1, 16], "texture": "#0"},
+				"south": {"uv": [0, 0, 1, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 1, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#0"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Base",
+			"from": [6.5, 27, 7.5],
+			"to": [9.5, 28, 8.5],
+			"faces": {
+				"north": {"uv": [0, 0, 3, 1], "texture": "#0"},
+				"east": {"uv": [0, 0, 3, 1], "texture": "#0"},
+				"south": {"uv": [0, 0, 3, 1], "texture": "#0"},
+				"west": {"uv": [0, 0, 3, 1], "texture": "#0"},
+				"up": {"uv": [0, 0, 3, 1], "texture": "#0"},
+				"down": {"uv": [0, 0, 3, 1], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Stab1",
+			"from": [8, 28, 7.5],
+			"to": [9, 32, 8.5],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 4], "texture": "#1"},
+				"east": {"uv": [0, 0, 1, 4], "texture": "#1"},
+				"south": {"uv": [0, 0, 1, 4], "texture": "#1"},
+				"west": {"uv": [0, 0, 1, 4], "texture": "#1"},
+				"up": {"uv": [0, 0, 1, 4], "texture": "#1"},
+				"down": {"uv": [0, 0, 1, 4], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Stab2",
+			"from": [7, 28, 7.5],
+			"to": [8, 30, 8.5],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 2], "texture": "#1"},
+				"east": {"uv": [0, 0, 1, 2], "texture": "#1"},
+				"south": {"uv": [0, 0, 1, 2], "texture": "#1"},
+				"west": {"uv": [0, 0, 1, 2], "texture": "#1"},
+				"up": {"uv": [0, 0, 1, 2], "texture": "#1"},
+				"down": {"uv": [0, 0, 1, 2], "texture": "#1"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 90, 0],
+			"translation": [0, -7, 1.75]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, -90, 0],
+			"translation": [0, -8.5, 2.25]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 90, 0],
+			"translation": [0, -8.75, 0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -90, 0],
+			"translation": [0, -9.5, 0]
+		},
+		"ground": {
+			"rotation": [0, 0, 90],
+			"translation": [5.75, 0, 0]
+		},
+		"gui": {
+			"rotation": [0, 0, -45],
+			"translation": [-4.5, -3, 0],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"fixed": {
+			"translation": [0, -6.5, 0],
+			"scale": [-1, -1, -1]
+		}
+	},
+	"groups": [
+		{
+			"name": "Tikitorch",
+			"origin": [8, 8, 8],
+			"children": [0, 1, 2, 3]
+		}
+	]
+}
