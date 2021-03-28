@@ -1,9 +1,8 @@
 {
-	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "scaffolding_side",
-		"1": "torch",
-		"particle": "scaffolding_side"
+		"0": "block/scaffolding_side",
+		"1": "block/torch",
+		"particle": "block/scaffolding_side"
 	},
 	"elements": [
 		{
