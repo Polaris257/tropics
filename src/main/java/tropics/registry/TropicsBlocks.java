@@ -4,20 +4,19 @@ import static tropics.Tropics.MODID;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import tropics.blocks.TikiTorchBlock;
 
 public class TropicsBlocks {
     public static final Block BALSA_PLANKS = new Block(
             FabricBlockSettings.of(Material.WOOD).strength(1.0F, 1.5F).sounds(BlockSoundGroup.WOOD));
 
-    public static final Block TIKI_TORCH = new Block(AbstractBlock.Settings.copy(Blocks.TORCH));
+    public static final Block TIKI_TORCH = new TikiTorchBlock();
 
     public static void registerBlocks() {
         Registry.register(Registry.BLOCK, new Identifier(MODID, "balsa_planks"), BALSA_PLANKS);
