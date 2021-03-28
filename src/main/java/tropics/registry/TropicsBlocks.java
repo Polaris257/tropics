@@ -21,8 +21,8 @@ public class TropicsBlocks
 
     public static void registerBlocks()
     {
-        Registry.register(Registry.BLOCK, new Identifier(MODID, "basla_planks"), BALSA_PLANKS);
-        Registry.register(Registry.ITEM, new Identifier(MODID, "basla_planks"), new BlockItem(BALSA_PLANKS, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "balsa_planks"), BALSA_PLANKS);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "balsa_planks"), new BlockItem(BALSA_PLANKS, new FabricItemSettings()));
 
         Registry.register(Registry.BLOCK, new Identifier(MODID, "tiki_torch"), TIKI_TORCH);
         Registry.register(Registry.ITEM, new Identifier(MODID, "tiki_torch"), new BlockItem(TIKI_TORCH, new FabricItemSettings()));
