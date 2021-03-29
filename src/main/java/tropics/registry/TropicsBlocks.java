@@ -7,7 +7,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-
+import tropics.blocks.TikiTorchBlock;
 
 import static tropics.Tropics.MODID;
 
@@ -17,7 +17,7 @@ public class TropicsBlocks
     public static final Block BALSA_PLANKS = new Block(
             FabricBlockSettings.of(Material.WOOD).strength(1.0F, 1.5F).sounds(BlockSoundGroup.WOOD));
 
-    public static final Block TIKI_TORCH = new Block(AbstractBlock.Settings.copy(Blocks.SAND));
+    public static final Block TIKI_TORCH = new TikiTorchBlock();
 
     public static void registerBlocks()
     {
